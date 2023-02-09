@@ -1,3 +1,13 @@
+/* ==UserStyle==
+@name         [SNK] UESP
+@version      1.0
+@namespace    https://github.com/suneteri
+@description  dark mode for the unofficial elder scrolls pages wiki.
+@author       snake
+@license      CC0
+==/UserStyle== */
+
+@-moz-document domain("uesp.net") {
 :root {
 --bg1:#1b1820;
 --bg2:#282A3A;
@@ -62,3 +72,4 @@ table { background:var(--bg3)!important; }
 code, pre, .mw-code { color:var(--text2)!important; background:var(--bg1)!important; border:0!important; }
 hr { color:var(--borders)!important; border-color:var(--borders)!important; background:var(--borders)!important; }
 a { color:var(--links)!important; }
+}
