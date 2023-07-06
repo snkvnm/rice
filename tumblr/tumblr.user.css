@@ -1,0 +1,71 @@
+/* ==UserStyle==
+@name         [SNK] tumblr
+@version      1.0
+@namespace    playmoar.neocities.org
+@description  changes to tumblr's layout.
+@author       snake
+@homepageURL  https://github.com/suneteri/rice/
+@preprocessor stylus
+@license      CC0
+==/UserStyle== */
+
+@-moz-document domain("www.tumblr.com") {
+/* REMOVAL OF CONTENT */
+/* header */
+.q8kZB.IMvK3.qjTo7.CxLjL.TRX6J, /* click for frogs */
+.KTRcB:nth-child(2), /* live */
+.KTRcB:nth-child(3), /* explore */
+.KTRcB:nth-child(4), /* store */
+/* dashboard */
+.bZTy6.WVvBo, /* dashboard tabs */
+.RAEnv, .MJvwO.kDCXR, /* tumblr live */
+.rR_oZ.KDoiW, /* title above carousel shit */
+.kDCXR.Oii0L, /* carousel shit idk */
+.p4DiZ, /* border divider thing */
+.kDCXR.H14Pr > .jxu4l, .pqNoe, /* suggested blogs */
+/* posts */
+.So6RQ, /* empty fake posts */
+.m5KTc:empty, /* top footer */
+[aria-label="Blaze"], /* blaze button */
+/* right sidebar */
+.visx-linepath, /* activity graph */
+._qHCt.m8mN_, /* footer */
+/* notifications popup */
+.iRWlG, /* graph */
+/* account / blogs popup sidebar */
+[href*="/settings/domains"], /* domains */
+[href*="/settings/ad-free-browsing"], /* go ad-free */
+[href*="/settings/purchases"], /* purchases */
+[href*="/settings/gifts"], /* gifts */
+[href*="/live/shop"], /* livestreaming credits */
+[href*="/changes"], /* whats new */
+[href*="/help"], /* help */
+[href*="/post-plus"], /* post+ */
+[href*="/blaze"], /* blaze */
+.s1cla, /* footer */
+/* account settings */
+[href*="/settings/subscriptions"], /* post+ subscriptions */
+.e0Nag.lEl3a, .APC7N.EPQuf > .BPf9u > .BPf9u, .Mpq8f.EPQuf > .BPf9u > .BPf9u, /* add badges */
+.XZA4X /* custom domain ad */
+{ display:none!important; }
+
+/* fix broken elements */
+.So6RQ[data-id] { display:block!important; }
+
+/* UI adjustments */
+/* header */
+._3kR_ { width:975px; max-width:100%; padding:0!important; }
+/* post creator thingie */
+.wttFd { margin-bottom:1rem!important; }
+/* blogs */
+.xZeGG::before { background:transparent!important; } /* blog username header */
+/* posts */
+.So6RQ { margin:0!important; }
+.So6RQ[data-id] { margin-bottom:1rem!important; }
+.qYXF9, .tOKgq { margin-top:0!important; } /* top footer */
+.eIaSl .m5KTc:not(:first-of-type) { border:0!important; } /* bottom footer */
+.vE6sH, .rlv6m .ePsyd { padding:0!important; border:0!important; background:transparent!important; } /* notecount */
+.uR3i7 { font-family:'Arial Black'; font-weight:900; color:#fff; text-transform:uppercase; text-shadow:1px 1px 1px #000; background:linear-gradient(to bottom,rgba(var(--white),1%)0%,RGB(var(--white))99%); box-shadow:none!important; }
+/* tags page */
+.gPQR5.pTaNm { max-width:950px!important; }
+}
