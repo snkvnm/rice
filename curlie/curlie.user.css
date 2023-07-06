@@ -1,0 +1,58 @@
+/* ==UserStyle==
+@name         [SNK] curlie
+@version      1.0
+@namespace    playmoar.neocities.org
+@description  dark mode for curlie.
+@author       snake
+@homepageURL  https://github.com/suneteri/rice/
+@preprocessor stylus
+@license      CC0
+==/UserStyle== */
+
+@-moz-document domain("curlie.org") {
+:root {
+--text:#ccc;
+--bg:#111;
+--bg2:#222;
+--borders:#982e2e; }
+
+html, body { color:var(--text)!important; background:var(--bg)!important; }
+
+/* links ### */
+section.cats aside a { color:var(--text)!important; }
+
+/* icons ### */
+i.catIcon, i.siteIcon, h3 i { color:var(--text)!important; }
+
+/* header ### */
+nav { background:var(--bg); border-color:var(--borders)!important; }
+header a.logo { background-color:var(--bg)!important; }
+#user-menu-name { border-color:var(--borders)!important; }
+
+/* homepage intro ### */
+#head-wrapper { color:var(--text)!important; background:var(--bg)!important; }
+
+/* search ### */
+section div.basic-search .text-box { color:var(--text)!important; background:var(--bg2)!important; border-color:var(--borders)!important; }
+#advanced-search-icon, i.search-submit-button, div.social .fa { color:var(--bg)!important; }
+
+/* categories ### */
+aside:hover { background:var(--bg2)!important; }
+
+section.search-and-social, section.results.desc-and-faq, section.results { border-color:var(--borders)!important; }
+
+h3.node-header { color:var(--text)!important; background:var(--bg2)!important; border-color:var(--borders)!important; }
+
+div.cat-item { border-color:var(--borders)!important; }
+
+section.thundercats { border-color:var(--borders)!important; }
+
+section.results.alt-search { background:var(--bg2)!important; border-color:var(--borders)!important; }
+
+footer.from-footer { border-color:var(--borders)!important; }
+
+/* stat footer ### */
+section.stats { color:var(--text)!important; background:var(--bg2)!important; border-color:var(--borders)!important; }
+
+#recent-cat { background:var(--bg2)!important; border-color:var(--borders)!important; }
+}
