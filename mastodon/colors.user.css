@@ -1,0 +1,168 @@
+/* ==UserStyle==
+@name         [SNK] mastodon colors
+@version      1.0
+@namespace    playmoar.neocities.org
+@description  custom color scheme for mastodon instances
+@author       snake
+@homepageURL  https://github.com/suneteri/rice/
+@preprocessor stylus
+@license      CC0
+==/UserStyle== */
+
+@-moz-document domain("flipping.rocks"), domain("blorbo.social") {
+:root {
+--bg:#06090b;
+--fg:#0f181b;
+--fg2:#1a262b;
+--text:#d8e0d4;
+--fade:#96a28f;
+--text2:var(--fg);
+--accent:#2acf7e; }
+
+body { color:var(--text)!important; background:var(--bg)!important; }
+
+/* wrappers */
+.column > .scrollable { background:var(--fg)!important; }
+.column-header { background:var(--fg)!important;  }
+
+/* announcements */
+.announcements,
+/* column settings button + popup / back button */ 
+.column-header__button, .column-header__button.active, .column-header__button.active:hover, .column-header__collapsible-inner { background:var(--fg2)!important; }
+/* back button */
+.column-header__back-button { color:var(--accent)!important; background:var(--fg)!important; }
+
+/* inputs */ .simple_form input[type="datetime-local"], .simple_form input[type="email"], .simple_form input[type="number"], .simple_form input[type="password"], .simple_form input[type="text"], .simple_form input[type="url"], .simple_form textarea { color:var(--text)!important; background:var(--fg2)!important; }
+/* buttons */ .button, .button.logo-button, .simple_form .block-button, .simple_form .button, .simple_form button { color:var(--text2)!important; background:var(--accent)!important; }
+/* dropdowns */ .simple_form select { color:var(--text)!important; background:var(--fg2)!important;  }
+/* icon buttons */ .icon-button, .text-icon-button { color:var(--fade)!important; }
+/* change icon color when active */ .icon-button.active, .icon-button.star-icon.active, .notification__favourite-icon-wrapper .star-icon { color:var(--accent)!important; }
+
+/* dropdown menus*/
+.dropdown-menu, .dropdown-menu__arrow::before { background:var(--fg2)!important; }
+.dropdown-menu__item, .dropdown-menu__item a, .dropdown-menu__item button { color:var(--text)!important; background:var(--fg2)!important; }
+.dropdown-menu__item a:hover, .dropdown-menu__item a:focus { color:var(--fade)!important; background:var(--fg)!important;  }
+.dropdown-menu__separator { border-color:var(--fade); }
+
+.flash-message { color:var(--fade)!important; background:var(--fg2)!important; }
+
+/* up arrows */
+.account__section-headline a.active::after, .account__section-headline a.active::before, .account__section-headline button.active::after, .account__section-headline button.active::before, .notification__filter-bar a.active::after, .notification__filter-bar a.active::before, .notification__filter-bar button.active::after, .notification__filter-bar button.active::before { border-color:transparent transparent var(--fg); }
+
+/* LEFT COLUMN ### */
+
+/* search bar */
+.search__input { background:var(--fg)!important; }
+
+/* compose */
+.compose-panel .compose-form__autosuggest-wrapper, .compose-form .autosuggest-textarea__textarea, .compose-form .spoiler-input__input,
+.compose-form .compose-form__modifiers
+{ color:var(--text)!important; background:var(--fg)!important; }
+
+.compose-form .compose-form__buttons-wrapper { color:var(--text)!important; background:var(--fg2)!important; }
+
+/* reply box */
+.reply-indicator { color:var(--text)!important; background:var(--fg)!important; border:0; }
+.reply-indicator__display-name, .reply-indicator__content, .attachment-list.compact .fa { color:var(--fade)!important; }
+.attachment-list__list a { color:var(--text)!important; }
+
+/* MIDDLE COLUMN ### */
+
+/* gap above middle column top bar */
+.tabs-bar__wrapper { background:var(--bg)!important; }
+/* middle column top bar back button */
+.column-back-button { color:var(--accent)!important; background:var(--fg)!important; }
+/* notifications filter bar */
+.account__section-headline button, .notification__filter-bar button { background:var(--fg2)!important }
+/* some inner wrapper on list and dm pages idk */
+.empty-column-indicator, .follow_requests-unlocked_explanation { color:var(--fade)!important; background:var(--fg2)!important; }
+/* list wrapper */
+.column-inline-form { color:var(--fade)!important; background:var(--fg2)!important; }
+/* input */
+.setting-text { color:var(--fade)!important; background:var(--fg)!important; border:0; }
+
+/* TOOTS ### */
+
+/* toot */
+.status { color:var(--text)!important; background:var(--fg)!important; border-color:var(--bg)!important; }
+.detailed-status, .detailed-status__action-bar { color:var(--text)!important; background:var(--fg2)!important; border:0!important; }
+/* toot header ("user reblogged") */
+.status__prepend { color:var(--fade)!important; }
+.status__prepend .status__display-name strong { color:var(--text)!important; }
+/* toot author */
+.status__display-name, .status__relative-time { color:var(--fade)!important; }
+/* content warning */
+.reply-indicator__content .status__content__spoiler-link, .status__content .status__content__spoiler-link { color:var(--fade)!important; background:var(--fg2)!important; }
+/* toot links */
+.reply-indicator__content a, .status__content a { color:var(--accent)!important; }
+
+/* PROFILES ### */
+
+/* account profile wrapper */
+.account__header { color:var(--text)!important; background:var(--fg)!important; }
+.account__header__bar { border-color:var(--bg)!important; }
+/* profile fields */
+.account__header__bio .account__header__fields { color:var(--text)!important; background:var(--fg2)!important; }
+.account__header__bio .account__header__fields .verified { color:var(--text)!important; background:var(--fg2)!important; border:1px solid var(--fg); } /* verified links */
+.account__header__bio .account__header__fields dt { color:var(--text)!important; } /* profile field name */
+.account__header__bio .account__header__fields dd { color:var(--fade)!important; } /* profile field content */
+/* posts/following/followers */
+.account__header__extra__links a { color:var(--fade)!important; }
+.account__header__extra__links a strong { color:var(--text)!important; } /* numbers */
+/* posts/posts+replies/media tab filter */
+.account__section-headline, .notification__filter-bar { color:var(--text)!important; background:var(--fg2 )!important; border-color:var(--bg)!important; }
+.account__section-headline a.active, .account__section-headline button.active, .notification__filter-bar a.active, .notification__filter-bar button.active { color:var(--text)!important; }
+.account__section-headline a, .account__section-headline button, .notification__filter-bar a, .notification__filter-bar button { color:var(--fade)!important; }
+/* featured tags */
+.trends__item__name a { color:var(--text)!important; }
+.trends__item__name, .getting-started__trends .trends__item__current { color:var(--fade)!important; }
+
+/* RIGHT COLUMN ### */
+
+/* navigation links */
+.column-link--transparent { color:var(--fade)!important; }
+.column-link--transparent.active { color:var(--accent)!important; }
+
+/* PREFERENCE PAGE ### */
+
+.admin-wrapper .content h2, .admin-wrapper .content h3, .simple_form .input.with_label .label_input > label, .permissions-list__item, .admin-wrapper .content > p strong { color:var(--text)!important; }
+
+/* links */
+.simple_form .hint a, .admin-wrapper .content .muted-hint a, body .muted-hint a { color:var(--accent)!important; }
+/* hint text */
+.simple_form .hint, .admin-wrapper .content .muted-hint, body .muted-hint { color:var(--fade)!important; }
+/* little inline thing */
+.account-role, .simple_form .not_recommended, .simple_form .recommended { color:var(--fade)!important; background:var(--fg2)!important; border:0!important; } 
+
+/* left column */
+.admin-wrapper .sidebar-wrapper__inner { background:var(--bg)!important; }
+.admin-wrapper .sidebar ul ul { background:transparent!important; }
+.admin-wrapper .sidebar ul a { color:var(--fade)!important; background:transparent!important; }
+.admin-wrapper .sidebar ul a.selected { color:var(--text)!important; background:var(--fg)!important; }
+
+/* profile options */
+.card__bar { color:var(--text)!important; background:var(--fg)!important; }
+.card__bar .display-name span { color:var(--fade)!important; }
+
+/* featured tags */
+.directory__tag > a, .directory__tag > div { color:var(--text)!important; background:var(--fg)!important; }
+
+/* filters */
+.announcements-list__item, .filters-list__item { color:var(--text)!important; background:var(--fg)!important; border:0!important; }
+.permissions-list__item__text__type, .announcements-list__item__meta, .filters-list__item__meta { color:var(--fade)!important; }
+
+/* tables */
+.filters .filter-subset a.selected { color:var(--accent)!important; border-color:var(--accent)!important; }
+.filters .filter-subset a { color:var(--fade)!important; }
+.batch-table__toolbar { color:var(--text)!important; background:var(--fg)!important; }
+.account .account__display-name, .accounts-table__count small, a.table-action-link, button.table-action-link { color:var(--fade)!important; }
+.batch-table__row { color:var(--text)!important; background:var(--fg2)!important; }
+.batch-table__row:nth-child(2n) { color:var(--fade)!important; background:var(--fg)!important; }
+.accounts-table .fa.active { color:var(--accent)!important; }
+.table > thead > tr > th { color:var(--text)!important; background:var(--fg)!important; }
+.table td, .table th { color:var(--text); background:var(--fg2); border:0; }
+.table > tbody > tr:nth-child(2n+1) > td, .table > tbody > tr:nth-child(2n+1) > th { background:var(--fg2); }
+
+/* app list */
+.applications-list__item, .filters-list__item { color:var(--text)!important; background:var(--fg)!important; border:0; }
+}
