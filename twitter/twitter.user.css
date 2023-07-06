@@ -1,0 +1,54 @@
+/* ==UserStyle==
+@name         [SNK] twitter
+@version      1.1
+@namespace    playmoar.neocities.org
+@description  another minimized twitter style.
+@author       snake
+@homepageURL  https://github.com/suneteri/rice/
+@preprocessor stylus
+@license      CC0
+==/UserStyle== */
+
+@-moz-document domain("twitter.com") {
+/* REMOVE SHIT */
+/* left sidebar */
+[aria-label="Twitter"], /* twitter logo */
+a[href*="/explore"], /* explore */
+a[href*="/i/twitter_blue_sign_up"], /* twitter blue */
+a[href*="/SNKPLAYMOAR/topics"], /* topics */
+a[href*="/newsletters"], /* newsletters */
+a[href*="/settings/monetization"], /* monitization */
+a[href*="/i/flow/convert_to_professional"], /* professional */
+[aria-label="Verified"], /* verified */
+a[href*="analytics.twitter.com"], /* analytics */
+a[href*="ads.twitter.com"], /* ads */
+a[href*="/i/connect_people"], /* connect */
+a[href*="https://support.twitter.com/"], /* support */
+[aria-label="More menu items"], /* more */
+/* right sidebar */
+[data-testid="sidebarColumn"], /* entire right sidebar */
+[aria-label="Get Verified"], /* get verified */
+[aria-label="Timeline: Trending now"], /* trending */
+[aria-label="Who to follow"], /* who to follow */
+[aria-label="Footer"], /* footer */
+[data-testid="DMDrawer"], /* message drawer */
+/* tweets */
+[aria-label="Add a GIF"], /* gif search */
+a[href*="/analytics"], /* remove tweet viewcount + analytics button */
+[data-testid="like"] span, [data-testid="unlike"] span, /* like count */
+[data-testid="retweet"] span, [data-testid="unretweet"] span, [href$="/retweets"], [href$="retweets/with_comments"], /* retweet count */
+[data-testid="reply"] span, /* replies count */
+/* profiles */
+[href$="/followers"] /* follower count */
+{ display:none!important; }
+
+/* BORDERS */
+.r-1ljd8xs, .r-rs99b7, .r-qklmqi { border:0!important; }
+.r-kuekak, .r-gu4em3 { background-color:transparent!important; }
+
+/* MISC APPEARANCE TWEAKS */
+.r-1b7u577 { margin-right:1rem; }
+[data-testid="tweet"] { margin:0 0 1rem 0; } /* margins between tweets */
+.r-zl2h9q { margin:0.25rem 0; } /* margin above profile name */
+.r-15zivkp { margin:0.5rem 0 1rem 0; } /* margin around "x retweeted" */
+}
