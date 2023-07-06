@@ -1,0 +1,131 @@
+/* ==UserStyle==
+@name         [SNK] artfight
+@version      1.0
+@namespace    playmoar.neocities.org
+@description  custom colors and layout changes for artfight.net.
+@author       snake
+@homepageURL  https://github.com/suneteri/rice/
+@preprocessor stylus
+@license      CC0
+==/UserStyle== */
+
+@-moz-document domain("artfight.net") {
+/* colors */
+:root {
+--font:'Inter';
+--text:#DCD7BA;
+--text-fade:#9485a8;
+--text-accent:var(--fg);
+--bg:#16161D;
+--fg:#2A2A37;
+--fg2:#363646;
+--red:#E46876;
+--orange:#FFA066;
+--yellow:#E6C384;
+--green:#98BB6C;
+--blue:#7E9CD8;
+--purple:#957FB8;
+--pink:#D27E99; }
+
+/* body */
+body { font-family:var(--font); color:var(--text)!important; background:var(--bg)!important; }
+
+/* text */
+.table { color:var(--text)!important; }
+/* muted text */
+.text-muted { color:var(--text-fade)!important; }
+/* links */
+a { color:var(--green); }
+a:hover { color:var(--text); }
+
+/* headers */
+.h4, h4 { font-size:1.1rem; margin:0.5rem!important; }
+
+/* lists because holy shit theyre ugly */
+ul, ol { margin-left:-15px!important; }
+li { margin:5px 0!important; padding-left:10px!important; }
+ul:last-child, ol:last-child { margin-bottom:0!important; }
+
+/* tables */
+.table-striped tbody tr:nth-of-type(2n+1) { background:var(--fg2); }
+.table-bordered, .table-bordered td, .table-bordered th { border-color:var(--bg); }
+.table-card tr:first-child  { border-top:1px solid var(--bg)!important; }
+.table-card td:first-child { border-left:1px solid var(--bg)!important; }
+.table-card td:last-child { border-right:1px solid var(--bg)!important; }
+.table-card tr:last-child td { border-bottom:1px solid var(--bg)!important; }
+
+/* buttons */
+.btn { border-color:transparent!important; box-shadow:none!important; }
+.btn-primary { color:var(--text-accent); background:var(--green); }
+.btn-secondary { background:var(--fg2)!important; border-color:transparent!important; box-shadow:none!important; }
+.btn-danger { color:var(--text-accent); background:var(--red)!important; }
+
+/* dropdown menus */
+.dropdown-menu { background:var(--fg2)!important; }
+.dropdown-divider { border-color:var(--bg)!important; }
+
+/* forms */
+.form-control { color:var(--text-fade)!important; text-shadow:none!important; background:var(--fg2); border-color:transparent!important; box-shadow:none!important; }
+.form-control:disabled, .form-control[readonly] { background:var(--fg) }
+.form-text { margin-top:0.5rem!important; }
+
+/* badges */
+.badge-info { color:var(--fg); background:var(--green); }
+
+/* alerts */
+.alert-info { color:var(--text-accent); background:var(--yellow)!important; border-color:transparent!important; }
+.alert-warning { color:var(--text-accent); background:var(--red)!important; border-color:transparent!important; }
+.alert-info a, .alert-warning a { color:var(--text-accent); text-decoration:underline; }
+.border-danger-muted { border:1px solid var(--red)!important; }
+.border-warning-muted { border:1px solid var(--orange)!important; }
+.border-info-muted { border-color:transparent!important; }
+
+/* progress bars */
+.progress { background:var(--fg2); }
+
+/* pagination */
+.page-link { background:var(--fg); border-color:transparent!important; }
+.page-item.disabled .page-link { background:var(--fg2);  }
+
+/* general containers */
+.card, .donation, .navbar, .scoreboard, footer, footer div.contain, .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active { background:var(--fg)!important; }
+.bg-light, .card-header, .card-footer, .breadcrumb { background:var(--fg2)!important; }
+
+/* top bar */
+.artfight-nav { margin-bottom:1rem!important; background:var(--fg)!important; }
+
+/* tab links */
+.nav-item, .nav-like { border-color:transparent!important; }
+.nav-link:hover { border-color:transparent!important; }
+
+/* profiles */
+.profile-header-background { background:transparent!important; border-color:transparent!important; }
+.profile-header-name a { color:var(--red)!important; }
+.profile-header-normal-status { margin-top:0.5rem!important; font-size:90%!important; }
+.profile-header-normal-status p { margin-bottom:0.5rem!important; }
+.profile-description { margin:2rem 0!important; font-size:110%; }
+.profile-description div { margin:0.5rem 0!important; }
+
+/* characters */
+/* image container */
+.image-pane img { margin-bottom:5px; }
+/* description */
+.character-description { padding:1rem!important; font-size:1.1rem; }
+/* permissions */
+.profile-characters-permissions .card-body { line-height:1.75; }
+
+/* members */
+.alternate:nth-child(2n+1) { background:var(--fg)!important; }
+.icon-user { margin-bottom:0.5rem; border-color:inherit!important; }
+
+/* comments */
+.comments { margin-top:1.5rem!important; }
+.comments h2 { margin:1rem 0!important; }
+.sceditor-container, div.sceditor-toolbar { background:var(--fg2)!important; }
+div.sceditor-group { background:var(--fg)!important; }
+.sceditor-button.active, .sceditor-button:active, .sceditor-button:hover { background:var(--fg2) }
+
+/* removal */
+.banner-container /* banner because it takes up a shitton of the screen */
+{ display:none!important; }
+}
