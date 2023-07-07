@@ -14,7 +14,7 @@ install with [stylus](https://add0n.com/stylus.html).
 - [ublock origin](https://github.com/gorhill/uBlock/) - powerful but lightweight adblocker (and more!)
 - [stylus](https://github.com/openstyles/stylus) - userstyle manager
 - [violentmonkey](https://violentmonkey.github.io/) - userscript manager
-- [indie wiki buddy](https://getindie.wiki/) - auto redirects bloated ugly-as-fuck fandom.com wiki's to non-fandom.com wikis or breezewiki.
+- [indie wiki buddy](https://getindie.wiki/) - auto redirects bloated ugly-as-fuck fandom.com wiki's to non-fandom.com wikis or a breezewiki host of your choice.
 ### userstyles
 - [userstyles.world](https://userstyles.world/)
 - [userstyles.org archive](https://uso.kkx.one/)
