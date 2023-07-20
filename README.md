@@ -7,6 +7,7 @@ install with [stylus](https://add0n.com/stylus.html).
 - **curlie** - basic dark mode
 - **mastodon** - custom color schemes. defaults to mastodon.social -- replace with preferred instance(s) as necessary.
 - **tumblr** - opinionated layout changes, meant to be used alongside [xkit rewritten](https://github.com/AprilSylph/XKit-Rewritten) and [palettes for tumblr](https://github.com/AprilSylph/Palettes-for-Tumblr).
+  - .json files are custom color schemes that can be loaded with palettes for tumblr
 - **twitter** - several design and layout changes
 - **uesp** - dark mode
 ## recommendations
